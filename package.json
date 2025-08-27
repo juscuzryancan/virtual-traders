@@ -14,6 +14,7 @@
     "test:watch:api": "jest --watchAll api"
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.49.0",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",

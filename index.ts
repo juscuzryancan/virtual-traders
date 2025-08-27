@@ -1,7 +1,4 @@
-// NOTE: Make sure this always runs first
-import dotenv from "dotenv";
-dotenv.config();
-
+import "@dotenvx/dotenvx/config";
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";

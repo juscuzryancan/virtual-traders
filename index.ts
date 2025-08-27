@@ -3,9 +3,13 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import bodyParser from "body-parser";
-import path from "path";
 import apiRoutes from "./routes/index.js";
 import { client } from "./db/index.js";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const server = express();
 server.use(cors());
